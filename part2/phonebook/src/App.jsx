@@ -46,7 +46,7 @@ const App = () => {
     <div>
       <h2>Phonebook</h2>
       <Filter filter={newFilter} onFilterChange={forFilterChange} />
-      <h2>add a new</h2>
+      <h3>add a new</h3>
       <PersonForm 
         newName={newName} 
         newNum={newNum} 
@@ -54,7 +54,7 @@ const App = () => {
         onNumChange={forNumChange} 
         onSubmit={addPerson} 
       />
-      <h2>Numbers</h2>
+      <h3>Numbers</h3>
       <List persons={showPersons} />
     </div>
   );
